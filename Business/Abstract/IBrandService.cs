@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Utilities.Results;
 using Entities.Concrete;
 
 namespace Business.Abstract
@@ -12,7 +13,7 @@ namespace Business.Abstract
         void Add(Brand brand);
         void Update(Brand brand);
         void Delete(int brandId);
-        List<Brand> GetAllBrands();
+        IDataResult<List<Brand>> GetAll();
         Brand GetBrandId(int brandId);
     }
 }

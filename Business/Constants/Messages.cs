@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,5 +52,6 @@ namespace Business.Constants
         public static string UserAlreadyExist = "Kullanıcı mevcut";
         public static string UserRegistered = "Kayıt Başarılı";
         public static string AccessTokenCreated= "Access Token Başarıyla oluşturuldu";
+        internal static List<Brand> NoBrandsRegisteredInTheSystem;
     }
 }
